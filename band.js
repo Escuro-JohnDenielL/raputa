@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $(document).ready(function() {
-    const apiUrl = https://memoirverse.site/Backend/Escuro/api.php;
+    const apiUrl = 'https://memoirverse.site/Backend/Escuro/api.php';
 
     function fetchAlbums() {
         $.ajax({
