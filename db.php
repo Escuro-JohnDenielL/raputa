@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "jpop";
+$username = "u586757316_jpopescuro";
+$password = "Escuro123!";
+$dbname = "u586757316_jpop";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
