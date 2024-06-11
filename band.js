@@ -34,12 +34,18 @@ $(document).ready(function() {
                             data: { id: album.id },
                             success: function() {
                                 fetchAlbums();
+                            },
+                            error: function(xhr, status, error) {
+                                console.error('Error deleting album:', error);
                             }
                         });
                     }));
                     row.append(actions);
                     table.append(row);
                 });
+            },
+            error: function(xhr, status, error) {
+                console.error('Error fetching albums:', error);
             }
         });
     }
@@ -64,6 +70,9 @@ $(document).ready(function() {
             success: function() {
                 fetchAlbums();
                 $('#bandForm')[0].reset();
+            },
+            error: function(xhr, status, error) {
+                console.error('Error saving album:', error);
             }
         });
     });
